@@ -24,16 +24,12 @@ const knightMoves = (startLocation, endLocation) => {
   // Early exit if one of the values passed is invalid
   const valid = /^[0-7]$/;
 
-  if (
-    (!valid.test(startLocation[0]) || !valid.test(startLocation[1]))
-  ) {
+  if (!valid.test(startLocation[0]) || !valid.test(startLocation[1])) {
     console.log('Start location is off the board!');
     return;
   }
 
-  if (
-    (!valid.test(endLocation[0]) || !valid.test(endLocation[1]))
-  ) {
+  if (!valid.test(endLocation[0]) || !valid.test(endLocation[1])) {
     console.log('End location is off the board!');
     return;
   }
